@@ -1,3 +1,7 @@
+body{
+  background-image: url("../img/gif.webp");
+  background-size: cover;
+}
 h1 {
   float: top;
   text-align: center;
@@ -24,8 +28,8 @@ ul.numberList{
 }
 
 .roboTalk{
-  padding: none;
-  border: 1px solid gray;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
   border-radius: 100px;
   text-align: center;
 }
