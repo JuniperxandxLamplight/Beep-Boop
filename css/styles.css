@@ -42,7 +42,7 @@ ul.numberList{
 }
 #result {
   background-color: rgba(250, 250, 250, 0.85);
-  border-radius: 100px;
+  border-radius: 50px;
   height: 100%;
   width: 45%;
   position: fixed;
@@ -55,4 +55,15 @@ ul.numberList{
   text-align: center;
   float: right;
   display: none;
+}
+#result::-webkit-scrollbar {
+  width: 5px;
+}
+#result::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+#result::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: darkgray;
+  outline: 1px solid slategray;
 }
