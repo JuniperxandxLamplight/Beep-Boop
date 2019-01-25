@@ -1,6 +1,15 @@
-#result {
-  display: none;
-}
 .numberList{
   list-style-type: none;
+}
+#nameError{
+  font-size: 10px;
+  color: red;
+}
+#numberError{
+  font-size: 10px;
+  color: red;
+}
+
+#result {
+  display: none;
 }
