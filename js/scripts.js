@@ -13,6 +13,11 @@ $(function(){
 
   $("form#counter").submit(function(event){
     event.preventDefault();
+
+    if ($('input#name').val() === ""){
+
+    }
+
     var userName = $('input#name').val();
     var highNumberInput = parseInt($("input#highNumber").val());
     var numberList = []
@@ -35,8 +40,13 @@ $(function(){
     });
 
     finalList.forEach(function(item){
+      $("form#counter").hide();
       $("#result").fadeIn();
-      $("ul.numberList").append('<li>' + item + '</li>');
+      if ($("#order").val() === "prepend"){
+        $("ul.numberList").prepend('<li>' + item + '</li>');
+      } else if ($("#order").val() === "append"){
+        $("ul.numberList").append('<li>' + item + '</li>');
+      }
     });
   });
 

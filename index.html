@@ -16,13 +16,17 @@
 
       <form id="counter">
         <div class="form-group">
-          <label for="name">Enter your name:</label>
+          <label for="name">Enter your name:</label><br>
           <input id="name" type="text">
         </div>
         <div class="form-group">
-          <label for="highNumber">Enter a number and the robot will count up to it for you:</label>
+          <label for="highNumber">Enter a number and the robot will count up to it for you:</label><br>
           <input id="highNumber" type="text">
         </div>
+        <select class="form-control" id="order">
+          <option value="append">Smallest to Largest</option>
+          <option value="prepend">Largest to Smallest</option>
+        </select>
 
         <button type="submit" class="btn btn-primary">Start Counting!</button>
       </form>
