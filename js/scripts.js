@@ -55,6 +55,7 @@ $(function(){
       });
     }
   });
-
-
+  $("button#refresh").click(function(){
+    location.reload();
+  });
 });
