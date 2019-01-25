@@ -44,6 +44,21 @@ $(function(){
         }
       });
 
+      $("#marvin").removeClass("firstPage");
+      $("#marvin").addClass("secondPage");
+      $("#oldQuote").hide();
+      $("#newQuote").fadeIn();
+      console.log(highNumberInput);
+      if (highNumberInput <= 10){
+        $("#newQuote").text("Well at least you made it easy on me.");
+      } else if (highNumberInput <= 50){
+        $("#newQuote").text("What a pain.");
+      } else if (highNumberInput <= 100){
+        $("#newQuote").text("Do you like making my life difficult? Is that it?");
+      } else if (highNumberInput > 100){
+        $("#newQuote").text("You should take some time to really think about what you do to people for your own sick pleasure.");
+      }
+
       finalList.forEach(function(item){
         $("form#counter").hide();
         $("#result").fadeIn();
@@ -55,7 +70,9 @@ $(function(){
       });
     }
   });
+
   $("button#refresh").click(function(){
     location.reload();
   });
+
 });
