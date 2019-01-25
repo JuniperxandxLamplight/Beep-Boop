@@ -63,9 +63,9 @@ $(function(){
         $("form#counter").hide();
         $("#result").fadeIn();
         if ($("#order").val() === "prepend"){
-          $("ul.numberList").prepend('<li>' + item + '</li>');
+          $("ul.numberList").prepend('<li class="animated heartBeat">' + item + '</li>');
         } else if ($("#order").val() === "append"){
-          $("ul.numberList").append('<li>' + item + '</li>');
+          $("ul.numberList").append('<li class="animated heartBeat">' + item + '</li>');
         }
       });
     }

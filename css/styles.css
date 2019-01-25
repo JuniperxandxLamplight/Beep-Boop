@@ -5,13 +5,16 @@ body{
 h1 {
   color: #e8e8e8;
   text-shadow: 2px 2px 4px #3a3a3a;
-  font-size: 55px;
+  font-size: 100px;
   float: top;
   text-align: center;
 }
 ul.numberList{
   list-style-type: none;
   padding-left: 0px;
+}
+li:hover {
+  animation-iteration-count: infinite;
 }
 #nameError{
   font-size: 10px;
@@ -50,7 +53,7 @@ ul.numberList{
   top: 0;
   right: 0;
   overflow-y: scroll;
-  margin-top: 60px;
+  margin-top: 128px;
   margin-right: 5px;
   text-align: center;
   float: right;
