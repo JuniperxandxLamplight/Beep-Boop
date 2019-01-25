@@ -1,19 +1,27 @@
 body{
   background-image: url("../img/gif.webp");
   background-size: cover;
+  color: darkblue;
 }
 h1 {
   color: #e8e8e8;
-  text-shadow: 2px 2px 4px #3a3a3a;
+  text-shadow: 3px 3px 5px #3a3a3a;
   font-size: 100px;
   float: top;
   text-align: center;
+}
+.form-control{
+  box-shadow: 3px 3px 5px #3a3a3a;
+}
+button{
+  box-shadow: -3px 3px 5px #3a3a3a;
 }
 ul.numberList{
   list-style-type: none;
   padding-left: 0px;
 }
 li:hover {
+  color: red;
   animation-iteration-count: infinite;
 }
 #nameError{
@@ -30,15 +38,16 @@ li:hover {
 }
 .secondPage{
   float: top;
-  width: 50%;;
+  width: 50%;
 }
-
 .roboTalk{
+  font-size: 18px;
   background-color: rgba(250, 250, 250, 0.85);
   padding: 10px;
   border: 1px solid #d3d3d3;
   border-radius: 100px;
   text-align: center;
+  box-shadow: 3px 3px 5px #3a3a3a;
 }
 #newQuote{
   display: none;
@@ -46,6 +55,7 @@ li:hover {
 #result {
   background-color: rgba(250, 250, 250, 0.85);
   border-radius: 50px;
+  box-shadow: -3px 3px 5px #3a3a3a;
   height: 100%;
   width: 45%;
   position: fixed;
