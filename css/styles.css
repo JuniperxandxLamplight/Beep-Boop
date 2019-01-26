@@ -3,6 +3,10 @@ body{
   background-size: cover;
   color: darkblue;
 }
+p{
+  padding-bottom: 0px;
+  padding: 3%
+}
 h1 {
   color: #e8e8e8;
   text-shadow: 3px 3px 5px #3a3a3a;
