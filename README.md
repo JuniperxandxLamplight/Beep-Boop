@@ -4,6 +4,17 @@
 
 #### By _Aurora Shido-Wagenet_
 
+## Specs
+_Behavior_ | _Input_ | _Output_
+
+* return inputted number to user | 4 | "4"
+* returns range of numbers up to inputted number | 4 | "1, 2, 3, 4"
+* returns "boop" for 1s | 4 | "boop, 2, 3, 4"
+* returns beep for 2s | 4 | "boop, beep", 3, 4"
+* returns "Sorry Dave" for 3s | 4 | "boop, beep, sorry Dave, 4"
+* returns strings for any number containing 1 2 or 3 | 15 | "...boop, boop, boop"
+* prioritizes 3 over 2 and 2 over 1 | 13 | "...boop, beep, sorry Dave."
+
 ## Description
 
 _Marvin is an adorable robot who's around here just to help you count when you find yourself stuck on a number. I can't promise he's very good at it though._
